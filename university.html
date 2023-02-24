@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body onload="loadfun()">
+    <div id="loading"></div>
    <!-- Navbar -->
    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
     <div class="container"><img src="assets/img/Logo.png" height="60">
         <div class="collapse navbar-collapse" id="navcol-5">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link"  href="#courses">Courses</a></li>
-                <li class="nav-item"><a class="nav-link" href="./Pages/university.html">University</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link"  href="./index.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="./university.html">University</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Contact Us</a></li>
             </ul>
             <a class="btn btn-primary ms-md-2" role="button" href="#">REGISTER</a>
         </div>
@@ -81,54 +82,47 @@
     </div>
 
     <!--Footer-->
-<footer class="page-footer">
-    <div class="bg-danger">
-      <div class="container">
-        <div class="row py-4 d-flex align-items-center">
-          <div class="col-md-12 text-center">
-            <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
-          </div>
+    <footer class="page-footer bg-dark">
+  
+        <div class="container text-center text-md-left mt-5">
+          <div class="row">
+          <div class="col-md-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold text-white">Usefull Links</h6>
+            <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
+      
+            <ul class="list-unstyled">
+              <li class="my-2 "><a href="./index.html">Home</a></li>
+              <li class="my-2"><a href="./index.html">Courses</a></li>
+              <li class="my-2"><a href="./university.html">University</a></li>
+              <li class="my-2"><a href="./index.html">Contact Us</a></li>
+            </ul>
+            </div>
+      
+            <div class="col-md-2 mx-auto mb-4">
+              <h6 class="text-uppercase font-weight-bold text-white">Contact Us</h6>
+              <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
+        
+              <ul class="list-unstyled text-white">
+                <li class="my-2"><i class="fas fa-home mr-3"></i>Bundi Road, 29</li>
+                <li class="my-2"><i class="fas fa-envelope mr-3"></i>info@ursite.com</li>
+                <li class="my-2"><i class="fas fa-phone mr-3"></i>+456 678 890</li>
+                <li class="my-2"><i class="fas fa-print mr-3"></i>+002 566 890</li>
+              </ul>
+              </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="container text-center text-md-left mt-5">
-      <div class="row">
-      <div class="col-md-2 mx-auto mb-4">
-        <h6 class="text-uppercase font-weight-bold">Usefull Links</h6>
-        <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
-  
-        <ul class="list-unstyled">
-          <li class="my-2"><a href="#home">Home</a></li>
-          <li class="my-2"><a href="#courses">Courses</a></li>
-          <li class="my-2"><a href="./Pages/university.html">University</a></li>
-          <li class="my-2"><a href="#contact">Contact Us</a></li>
-        </ul>
         </div>
-  
-        <div class="col-md-2 mx-auto mb-4">
-          <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
-          <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
-    
-          <ul class="list-unstyled">
-            <li class="my-2"><i class="fas fa-home mr-3"></i>Bundi Road, 29</li>
-            <li class="my-2"><i class="fas fa-envelope mr-3"></i>info@ursite.com</li>
-            <li class="my-2"><i class="fas fa-phone mr-3"></i>+456 678 890</li>
-            <li class="my-2"><i class="fas fa-print mr-3"></i>+002 566 890</li>
-          </ul>
-          </div>
-    </div>
-    </div>
-  
-    <div class="footer-copyright text-center py-3">
-      <p>All right reserved &copy; Copyright</p>
-    </div>
-  </footer>
-
+      
+        <div class="footer-copyright text-center py-3 text-white">
+          <p>All right reserved &copy; Copyright</p>
+        </div>
+      </footer>
+      <script>
+        var load = document.getElementById("loading");
+        function loadfun()
+        {
+          load.style.display='none';
+        }
+      </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
 </body>

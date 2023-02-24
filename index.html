@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body onload="loadfun()">
+  <div id="loading"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
         <div class="container"><img src="assets/img/Logo.png" height="60">
@@ -20,7 +21,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link"  href="#courses">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./Pages/university.html">University</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./university.html">University</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
                 <a class="btn btn-primary ms-md-2" role="button" href="#">REGISTER</a>
@@ -35,10 +36,9 @@
             <div class="carousel-item active">
               <img src="https://th.bing.com/th/id/R.c46349464b36366a678c70a142ece38c?rik=jVzvlXghkOiZgA&riu=http%3a%2f%2falumni.gyanvihar.org%2fimages%2fslider%2fDSC_85201.png&ehk=itTjQwBHKV2wvMaHwPXUpFY6dUmXvR1XS21XukQgwUU%3d&risl=&pid=ImgRaw&r=0" alt="Click here" height="610" width="1920">
               <div class="carousel-caption">
-                <p>Knowledge is power</p>
                 <h1> <strong>Suresh Gyan Vihar University</strong></h1>
                 <p>We had such a great time in LA! We had such a great time in LA! We had such a great time in LA! We had such a great time in LA!</p>
-                <button type="button" class="btn btn-danger">Resurvation</button>
+                
               </div> 
             </div>
             <div class="carousel-item">
@@ -46,6 +46,7 @@
               <div class="carousel-caption">
                 <h1><strong>Vivekananda Global University</strong></h1>
                 <p>We had such a great time in LA! We had such a great time in LA!</p>
+                
               </div> 
             </div>
             <div class="carousel-item">
@@ -100,7 +101,7 @@
                                         <div class="card p-5 border-0 rounded-top border-bottom position-relative hover-style-1">
                                             <span class="number">01</span>
                                             <h3 class="mt-3">UG/PG Program</h3>
-                                            <a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>more Details</a>
+                                            <a href="#" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>more Details</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -108,7 +109,7 @@
                                             <span class="number">02</span>
                                             <h3 class="mt-3">Diploma</h3>
                                             <!-- <p class="mt-3 mb-4">Vestibulum sit amet blan augue, sit amet vehicula mi. Aliquam vitae varius.</p> -->
-                                            <a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>more Details</a>
+                                            <a href="#" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>more Details</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
@@ -116,7 +117,7 @@
                                             <span class="number">03</span>
                                             <h3 class="mt-3">Doctorate</h3>
                                             <!-- <p class="mt-3 mb-4">Vestibulum sit amet blan augue, sit amet vehicula mi. Aliquam vitae varius.</p> -->
-                                            <a href="about.html" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>more Details</a>
+                                            <a href="#" class="text-color text-uppercase font-size-13 letter-spacing font-weight-bold"><i class="ti-minus mr-2 "></i>more Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -228,40 +229,27 @@
                     </div>
     </section>
 <!--Footer-->
-<footer class="page-footer">
-    <div class="bg-danger">
-      <div class="container">
-        <div class="row py-4 d-flex align-items-center">
-          <div class="col-md-12 text-center">
-            <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
+<footer class="page-footer bg-dark">
   
     <div class="container text-center text-md-left mt-5">
       <div class="row">
       <div class="col-md-2 mx-auto mb-4">
-        <h6 class="text-uppercase font-weight-bold">Usefull Links</h6>
+        <h6 class="text-uppercase font-weight-bold text-white">Usefull Links</h6>
         <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
   
         <ul class="list-unstyled">
-          <li class="my-2"><a href="#home">Home</a></li>
+          <li class="my-2 "><a href="#home">Home</a></li>
           <li class="my-2"><a href="#courses">Courses</a></li>
-          <li class="my-2"><a href="./Pages/university.html">University</a></li>
+          <li class="my-2"><a href="./university.html">University</a></li>
           <li class="my-2"><a href="#contact">Contact Us</a></li>
         </ul>
         </div>
   
         <div class="col-md-2 mx-auto mb-4">
-          <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+          <h6 class="text-uppercase font-weight-bold text-white">Contact Us</h6>
           <hr class="bg-danger mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
     
-          <ul class="list-unstyled">
+          <ul class="list-unstyled text-white">
             <li class="my-2"><i class="fas fa-home mr-3"></i>Bundi Road, 29</li>
             <li class="my-2"><i class="fas fa-envelope mr-3"></i>info@ursite.com</li>
             <li class="my-2"><i class="fas fa-phone mr-3"></i>+456 678 890</li>
@@ -271,11 +259,17 @@
     </div>
     </div>
   
-    <div class="footer-copyright text-center py-3">
+    <div class="footer-copyright text-center py-3 text-white">
       <p>All right reserved &copy; Copyright</p>
     </div>
   </footer>
-
+  <script>
+    var load = document.getElementById("loading");
+    function loadfun()
+    {
+      load.style.display='none';
+    }
+  </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Filterable-Cards--Filterable-Cards.js"></script>
 </body>
